@@ -3,7 +3,7 @@ module github.com/guoyk93/ezadmis-extra
 go 1.18
 
 require (
-	github.com/guoyk93/ezadmis v0.0.0-20220928032223-d91da609baf8
+	github.com/guoyk93/ezadmis v0.0.0-20220928044858-9ff926ba270a
 	k8s.io/api v0.22.9
 )
 

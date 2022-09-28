@@ -16,8 +16,11 @@ const (
 )
 
 func main() {
+	debug, _ := strconv.ParseBool(os.Getenv("DEBUG"))
+
 	s := ezadmis.NewWebhookServer(
 		ezadmis.WebhookServerOptions{
+			Debug: debug,
 			Handler: func(
 				ctx context.Context,
 				request *admissionv1.AdmissionRequest,
