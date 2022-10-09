@@ -10,7 +10,7 @@ Extra tools built on top of ezadmis
 
 ## Donation
 
-View <https://guoyk93.github.io/#donation>
+View <https://guoyk.xyz/donation>
 
 ## Credits
 

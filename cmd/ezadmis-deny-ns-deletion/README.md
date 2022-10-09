@@ -67,7 +67,7 @@ spec:
 
 ## Donation
 
-View <https://guoyk93.github.io/#donation>
+View <https://guoyk.xyz/donation>
 
 ## Credits
 
