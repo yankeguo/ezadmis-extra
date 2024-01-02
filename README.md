@@ -8,10 +8,6 @@ Extra tools built on top of ezadmis
 
   Deny deletion of namespace, unless a special annotation is set
 
-## Donation
-
-View <https://guoyk.xyz/donation>
-
 ## Credits
 
 GUO YANKE, MIT License
