@@ -3,7 +3,7 @@
 This admission webhook will deny namespace deletion, unless the namespace has an annotation:
 
 ```
-ezadmis.guoyk93.github.io/deletion-allowed: "true"
+ezadmis.yankeguo.github.io/deletion-allowed: "true"
 ```
 
 ## Installation
@@ -34,7 +34,7 @@ data:
         }
       ],
       "sideEffect": "None",
-      "image": "guoyk/ezadmis-deny-ns-deletion"
+      "image": "yankeguo/ezadmis-deny-ns-deletion"
     }
 ---
 # Job
@@ -49,7 +49,7 @@ spec:
       serviceAccount: ezadmis-install
       containers:
         - name: install-ezadmis-deny-ns-deletion
-          image: guoyk/ezadmis-install
+          image: yankeguo/ezadmis-install
           args:
             - /ezadmis-install
             - -conf
@@ -65,10 +65,6 @@ spec:
       restartPolicy: OnFailure
 ```
 
-## Donation
-
-View <https://guoyk.xyz/donation>
-
 ## Credits
 
-Guo Y.K., MIT License
+GUO YANKE, MIT License

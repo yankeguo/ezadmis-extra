@@ -13,7 +13,8 @@ import (
 )
 
 const (
-	KeyDeletionAllowed = "ezadmis.guoyk93.github.io/deletion-allowed"
+	KeyDeletionAllowed       = "ezadmis.yankeguo.github.io/deletion-allowed"
+	KeyDeletionAllowedLegacy = "ezadmis.guoyk93.github.io/deletion-allowed"
 )
 
 func main() {
@@ -37,6 +38,10 @@ func main() {
 				}
 				if ns.Annotations != nil {
 					if ok, _ := strconv.ParseBool(ns.Annotations[KeyDeletionAllowed]); ok {
+						return
+					}
+					// legacy annotation
+					if ok, _ := strconv.ParseBool(ns.Annotations[KeyDeletionAllowedLegacy]); ok {
 						return
 					}
 				}
